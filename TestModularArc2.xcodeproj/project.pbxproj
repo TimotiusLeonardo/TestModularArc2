@@ -16,6 +16,8 @@
 		FFB9E2DB2876D5DF00C7C51D /* TestModularArc2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E2DA2876D5DF00C7C51D /* TestModularArc2Tests.swift */; };
 		FFB9E2E52876D5DF00C7C51D /* TestModularArc2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E2E42876D5DF00C7C51D /* TestModularArc2UITests.swift */; };
 		FFB9E2E72876D5DF00C7C51D /* TestModularArc2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB9E2E62876D5DF00C7C51D /* TestModularArc2UITestsLaunchTests.swift */; };
+		FFB9E3472876D84A00C7C51D /* MyFramework2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB9E3462876D84A00C7C51D /* MyFramework2.framework */; };
+		FFB9E3482876D84A00C7C51D /* MyFramework2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFB9E3462876D84A00C7C51D /* MyFramework2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,21 +35,21 @@
 			remoteGlobalIDString = FFB9E2BF2876D5DE00C7C51D;
 			remoteInfo = TestModularArc2;
 		};
-		FFB9E31C2876D67D00C7C51D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FFB9E3172876D67C00C7C51D /* MyFramework2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FFB9E2FD2876D67C00C7C51D;
-			remoteInfo = MyFramework2;
-		};
-		FFB9E31E2876D67D00C7C51D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FFB9E3172876D67C00C7C51D /* MyFramework2.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FFB9E3072876D67C00C7C51D;
-			remoteInfo = MyFramework2Tests;
-		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FFB9E3492876D84B00C7C51D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FFB9E3482876D84A00C7C51D /* MyFramework2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FFB9E2C02876D5DE00C7C51D /* TestModularArc2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestModularArc2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +65,7 @@
 		FFB9E2E02876D5DF00C7C51D /* TestModularArc2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestModularArc2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9E2E42876D5DF00C7C51D /* TestModularArc2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModularArc2UITests.swift; sourceTree = "<group>"; };
 		FFB9E2E62876D5DF00C7C51D /* TestModularArc2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModularArc2UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FFB9E3172876D67C00C7C51D /* MyFramework2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyFramework2.xcodeproj; path = MyFramework2/MyFramework2.xcodeproj; sourceTree = "<group>"; };
+		FFB9E3462876D84A00C7C51D /* MyFramework2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MyFramework2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB9E3472876D84A00C7C51D /* MyFramework2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,11 +97,11 @@
 		FFB9E2B72876D5DE00C7C51D = {
 			isa = PBXGroup;
 			children = (
-				FFB9E3172876D67C00C7C51D /* MyFramework2.xcodeproj */,
 				FFB9E2C22876D5DE00C7C51D /* TestModularArc2 */,
 				FFB9E2D92876D5DF00C7C51D /* TestModularArc2Tests */,
 				FFB9E2E32876D5DF00C7C51D /* TestModularArc2UITests */,
 				FFB9E2C12876D5DE00C7C51D /* Products */,
+				FFB9E3452876D84A00C7C51D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,13 +146,12 @@
 			path = TestModularArc2UITests;
 			sourceTree = "<group>";
 		};
-		FFB9E3182876D67C00C7C51D /* Products */ = {
+		FFB9E3452876D84A00C7C51D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FFB9E31D2876D67D00C7C51D /* MyFramework2.framework */,
-				FFB9E31F2876D67D00C7C51D /* MyFramework2Tests.xctest */,
+				FFB9E3462876D84A00C7C51D /* MyFramework2.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +164,7 @@
 				FFB9E2BC2876D5DE00C7C51D /* Sources */,
 				FFB9E2BD2876D5DE00C7C51D /* Frameworks */,
 				FFB9E2BE2876D5DE00C7C51D /* Resources */,
+				FFB9E3492876D84B00C7C51D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,12 +245,6 @@
 			mainGroup = FFB9E2B72876D5DE00C7C51D;
 			productRefGroup = FFB9E2C12876D5DE00C7C51D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = FFB9E3182876D67C00C7C51D /* Products */;
-					ProjectRef = FFB9E3172876D67C00C7C51D /* MyFramework2.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FFB9E2BF2876D5DE00C7C51D /* TestModularArc2 */,
@@ -256,23 +253,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		FFB9E31D2876D67D00C7C51D /* MyFramework2.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MyFramework2.framework;
-			remoteRef = FFB9E31C2876D67D00C7C51D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FFB9E31F2876D67D00C7C51D /* MyFramework2Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MyFramework2Tests.xctest;
-			remoteRef = FFB9E31E2876D67D00C7C51D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FFB9E2BE2876D5DE00C7C51D /* Resources */ = {
