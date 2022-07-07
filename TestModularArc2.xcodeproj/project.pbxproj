@@ -33,6 +33,20 @@
 			remoteGlobalIDString = FFB9E2BF2876D5DE00C7C51D;
 			remoteInfo = TestModularArc2;
 		};
+		FFB9E31C2876D67D00C7C51D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB9E3172876D67C00C7C51D /* MyFramework2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFB9E2FD2876D67C00C7C51D;
+			remoteInfo = MyFramework2;
+		};
+		FFB9E31E2876D67D00C7C51D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFB9E3172876D67C00C7C51D /* MyFramework2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FFB9E3072876D67C00C7C51D;
+			remoteInfo = MyFramework2Tests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +63,7 @@
 		FFB9E2E02876D5DF00C7C51D /* TestModularArc2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestModularArc2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB9E2E42876D5DF00C7C51D /* TestModularArc2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModularArc2UITests.swift; sourceTree = "<group>"; };
 		FFB9E2E62876D5DF00C7C51D /* TestModularArc2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModularArc2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFB9E3172876D67C00C7C51D /* MyFramework2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MyFramework2.xcodeproj; path = MyFramework2/MyFramework2.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +94,7 @@
 		FFB9E2B72876D5DE00C7C51D = {
 			isa = PBXGroup;
 			children = (
+				FFB9E3172876D67C00C7C51D /* MyFramework2.xcodeproj */,
 				FFB9E2C22876D5DE00C7C51D /* TestModularArc2 */,
 				FFB9E2D92876D5DF00C7C51D /* TestModularArc2Tests */,
 				FFB9E2E32876D5DF00C7C51D /* TestModularArc2UITests */,
@@ -125,6 +141,15 @@
 				FFB9E2E62876D5DF00C7C51D /* TestModularArc2UITestsLaunchTests.swift */,
 			);
 			path = TestModularArc2UITests;
+			sourceTree = "<group>";
+		};
+		FFB9E3182876D67C00C7C51D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFB9E31D2876D67D00C7C51D /* MyFramework2.framework */,
+				FFB9E31F2876D67D00C7C51D /* MyFramework2Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +242,12 @@
 			mainGroup = FFB9E2B72876D5DE00C7C51D;
 			productRefGroup = FFB9E2C12876D5DE00C7C51D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FFB9E3182876D67C00C7C51D /* Products */;
+					ProjectRef = FFB9E3172876D67C00C7C51D /* MyFramework2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FFB9E2BF2876D5DE00C7C51D /* TestModularArc2 */,
@@ -225,6 +256,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FFB9E31D2876D67D00C7C51D /* MyFramework2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MyFramework2.framework;
+			remoteRef = FFB9E31C2876D67D00C7C51D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FFB9E31F2876D67D00C7C51D /* MyFramework2Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MyFramework2Tests.xctest;
+			remoteRef = FFB9E31E2876D67D00C7C51D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FFB9E2BE2876D5DE00C7C51D /* Resources */ = {
